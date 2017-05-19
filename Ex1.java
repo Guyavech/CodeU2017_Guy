@@ -33,10 +33,11 @@ public class Ex1 {
 	 */
 	private static HashMap<Character, Integer> charactersHistogram(String s) {
 		HashMap<Character, Integer> histogram = new HashMap<>();
+		String lowerCasedString = s.toLowerCase();
 		
 		//iterate over the string and create the histogram
 		for (int i = 0; i < s.length(); i++) {
-			char c = s.toLowerCase().charAt(i);
+			char c = lowerCasedString.charAt(i);
 			
 			if (histogram.containsKey(c)) {
 				histogram.put(c, histogram.get(c) + 1);
