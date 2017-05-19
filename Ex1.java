@@ -33,6 +33,7 @@ public class Ex1 {
 	 */
 	private static HashMap<Character, Integer> charactersHistogram(String s) {
 		HashMap<Character, Integer> histogram = new HashMap<>();
+		//took the lower casing out of the loop. ok now?
 		String lowerCasedString = s.toLowerCase();
 		
 		//iterate over the string and create the histogram
