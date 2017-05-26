@@ -7,13 +7,6 @@ public class BinaryTree<T> {
 		 this.root = null;
 	}
 	
-	public BinaryTree (T value) {
-		if (root == null) {
-			root = new TreeNode<T>(value);
-		}
-		root.insertRandomly(value);
-	}
-	
 	public TreeNode<T> getRoot() {
 		return this.root;
 	}
