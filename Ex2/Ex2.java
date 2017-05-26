@@ -1,6 +1,5 @@
 import java.util.HashSet;
 import java.util.Random;
-import java.util.Set;
 
 public class Ex2 {
 
@@ -56,7 +55,7 @@ public class Ex2 {
 	 * @param nextNode - a TreeNode to iterate on
 	 * @param targetNode - the desired node to find
 	 */
-	public static void printAncestors(TreeNode<?> nextNode, TreeNode<?> targetNode) {
+	private static void printAncestors(TreeNode<?> nextNode, TreeNode<?> targetNode) {
 		if (nextNode.getData() == targetNode.getData()) {
 			System.out.print("Key - ");
 		}
@@ -108,7 +107,7 @@ public class Ex2 {
 	 * @param node2 second node to check
 	 * @return The first Node which node1 and node2 are not located in its same subtree (left or right)
 	 */
-	public static TreeNode<?> lowestCommonAncestor(TreeNode<?> candidate, TreeNode<?> node1, TreeNode<?> node2) {
+	private static TreeNode<?> lowestCommonAncestor(TreeNode<?> candidate, TreeNode<?> node1, TreeNode<?> node2) {
 		if (candidate.getData() == node1.getData() || candidate.getData() == node2.getData()) {
 			return candidate;
 		}
