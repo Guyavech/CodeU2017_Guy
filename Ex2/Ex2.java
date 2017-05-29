@@ -198,11 +198,9 @@ public class Ex2 {
 		
 		while (counter < setSize) {
 			int x = (random.nextInt(setSize) + 1) * 5;
-			if (set.contains(x)) {
-				continue;
-			} else {
-				set.add(x);
-				++counter;
+			
+			if (set.add(x)) {
+				counter++;
 			}
 		}
 		
