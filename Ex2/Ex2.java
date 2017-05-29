@@ -161,19 +161,22 @@ public class Ex2 {
 	 * Builds a random tree and arguments to run the checks on.
 	 */
 	private static void checkWithRandomTree() {
-		int setSize = 20;		
+		int setSize = 20;
+		HashSet<Integer> set = createSet(setSize);
+		Integer[] keys = new Integer[setSize];
+		keys = set.toArray(keys);
 
 		BinaryTree<Integer> tree = new BinaryTree<>();
-		for (Integer i : createSet(setSize)) {
+		for (Integer i : set) {
 			tree.insertRandomly(i);
 		}
-		
+
 		tree.printTree();
 		
 		Random random = new Random();
-		int x = (random.nextInt(20) + 1) * 5;
-		int y = (random.nextInt(20) + 1) * 5;
-		int z = (random.nextInt(20) + 1) * 5;
+		int x = keys[(random.nextInt(setSize))];
+		int y = keys[(random.nextInt(setSize))];
+		int z = keys[(random.nextInt(setSize))];
 		
 		printAncestors(tree, new TreeNode<Integer>(x));
 		
@@ -194,7 +197,7 @@ public class Ex2 {
 		HashSet<Integer> set = new HashSet<Integer>();
 		
 		while (counter < setSize) {
-			int x = (random.nextInt(20) + 1) * 5;
+			int x = (random.nextInt(setSize) + 1) * 5;
 			if (set.contains(x)) {
 				continue;
 			} else {
