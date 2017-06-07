@@ -39,7 +39,7 @@ public class Ex3 {
 	public TreeSet<String> findWords(int rows, int columns, char[][] matrix, Dictionary dictionary) {
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
-				checkPath(i,j, new StringBuilder(), new boolean[rows][columns]);
+				checkPath(i, j, new StringBuilder(), new boolean[rows][columns]);
 			}
 		}	
 		return this.wordsInMatrix;
