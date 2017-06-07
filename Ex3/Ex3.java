@@ -75,13 +75,15 @@ public class Ex3 {
 		// traverse into its neighboring cells
 		if (this.dictionary.isPrefix(word)) {
 			visitedCells[i][j] = true;
+			
+			//get 'sb' ready for garbage collection
+			sb = null;
+			
 			for (int x = i - 1; x <= i + 1; x++) {
 				for (int y = j - 1; y <= j + 1; y++) {
-					//get 'sb' ready for garbage collection
-					sb = null;
-					
+				
 					//traverse to neighbor
-					checkPath(x, y, new StringBuilder(word), visitedCells);
+					checkPath(x,y, new StringBuilder(word), visitedCells);
 				}
 			}
 		} 
