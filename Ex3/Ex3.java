@@ -5,12 +5,11 @@ public class Ex3 {
 	private int rows;
 	private int columns;
 	private char[][] matrix;
+	private Dictionary dictionary;
 	
 	//a set for final valid words in the dictionary
 	private TreeSet<String> wordsInMatrix = new TreeSet<>();
 	
-	private Dictionary dictionary;
-
 	/**
 	 * Constructor
 	 * @param rows number of rows
