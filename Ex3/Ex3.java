@@ -36,7 +36,7 @@ public class Ex3 {
 	 * @param dictionary
 	 * @return a set of all words in found in the grid
 	 */
-	private TreeSet<String> findWords(int rows, int columns, char[][] matrix, Dictionary dictionary) {
+	public TreeSet<String> findWords(int rows, int columns, char[][] matrix, Dictionary dictionary) {
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
 				checkPath(i,j, new StringBuilder(), new boolean[rows][columns]);
