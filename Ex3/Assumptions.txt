@@ -1,0 +1,5 @@
+Input Assumptions:
+
+* All character are lower case alphbetical letters
+* If a word exists in the dictionary, then all of its prefixes exists in the prefixes set (this was answered on Slack).
+* Both row and columns are larger than 0.
