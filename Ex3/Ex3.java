@@ -28,7 +28,7 @@ public class Ex3 {
 	}
 
 	/**
-	 * A method that iterates of the characters matrix and
+	 * A method that iterates over the characters matrix and
 	 * initiate on each cell the check-up
 	 * @param rows
 	 * @param columns
