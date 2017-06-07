@@ -81,7 +81,7 @@ public class Ex3 {
 					sb = null;
 					
 					//traverse to neighbor
-					checkPath(x,y, new StringBuilder(word), visitedCells);
+					checkPath(x, y, new StringBuilder(word), visitedCells);
 				}
 			}
 		} 
