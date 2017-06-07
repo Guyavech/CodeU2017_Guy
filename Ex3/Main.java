@@ -9,11 +9,11 @@ public class Main {
 		String[] prefix2 = {"c", "ca","cat", "caisc", "catf","f", "fi","fis"};
 		
 		char[][] matrix = {{'a','a','r'},
-						   {'t','c','d'}};
+				   {'t','c','d'}};
 		
 		char[][] catrix =  {{'t','r','c','a'},
-							{'h','s','i','t'},
-							{'i','c','c','f'}};
+				    {'h','s','i','t'},
+				    {'i','c','c','f'}};
 		
 		
 		Ex3 ex3 = new Ex3(matrix.length, matrix[0].length, matrix, new Dictionary(words, prefix));
@@ -25,5 +25,4 @@ public class Main {
 		//expected: [c, cat, cc, fish]
 		System.out.println(ex3_2.getWordsInMatrix().toString());
 	}
-
 }
