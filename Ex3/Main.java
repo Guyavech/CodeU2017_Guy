@@ -9,11 +9,11 @@ public class Main {
 		String[] prefix2 = {"c", "ca","cat", "caisc", "catf","f", "fi","fis"};
 		
 		char[][] matrix = {{'a','a','r'},
-						   {'t','c','d'}};
+				   		   {'t','c','d'}};
 		
 		char[][] catrix =  {{'t','r','c','a'},
-							{'h','s','i','t'},
-							{'i','c','c','f'}};
+				 		    {'h','s','i','t'},
+						    {'i','c','c','f'}};
 		
 		char[][] test = {{'a','b'},
 						 {'c','d'}};
