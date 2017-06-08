@@ -84,9 +84,9 @@ public class Ex3 {
 				for (int y = j - 1; y <= j + 1; y++) {
 					//traverse to neighbor
 					checkPath(x, y, new StringBuilder(word), copyOfVisitedCells);
-					visitedCells[i][j] = false;
 				}
 			}
+			visitedCells[i][j] = false;
 		} 
 	}
 	
