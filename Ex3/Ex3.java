@@ -7,7 +7,7 @@ public class Ex3 {
 	private char[][] matrix;
 	private Dictionary dictionary;
 	
-	//a set for final valid words in the dictionary
+	//a set for final valid words in the dictionary that were found in the grid
 	private TreeSet<String> wordsInMatrix = new TreeSet<>();
 	
 	/**
@@ -27,7 +27,7 @@ public class Ex3 {
 	}
 
 	/**
-	 * A method that iterates of the characters matrix and
+	 * A method that iterates over the characters in a matrix and
 	 * initiate on each cell the check-up
 	 * @param rows
 	 * @param columns
