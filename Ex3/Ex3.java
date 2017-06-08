@@ -73,16 +73,18 @@ public class Ex3 {
 		// if this word is also a prefix of another word
 		// traverse into its neighboring cells
 		if (this.dictionary.isPrefix(word)) {
+			
 			visitedCells[i][j] = true;
+			boolean[][] copyOfVisitedCells = copyVisitedMatrix(visitedCells);
 			
 			//get 'sb' ready for garbage collection
 			sb = null;
 			
 			for (int x = i - 1; x <= i + 1; x++) {
 				for (int y = j - 1; y <= j + 1; y++) {
-				
 					//traverse to neighbor
-					checkPath(x,y, new StringBuilder(word), visitedCells);
+					checkPath(x, y, new StringBuilder(word), copyOfVisitedCells);
+					visitedCells[i][j] = false;
 				}
 			}
 		} 
