@@ -105,21 +105,6 @@ public class Ex3 {
 
 		return true;
 	}
-	
-	/**
-	 * clone a two dimensional boolean array
-	 * @param origin
-	 * @return a copy of origin
-	 */
-	private boolean[][] copyVisitedMatrix(boolean[][] origin) {
-		boolean[][] copy = new boolean[origin.length][origin[0].length];
-		for (int i = 0; i < copy.length; i++) {
-			for (int j = 0; j < copy[i].length; j++) {
-				copy[i][j] = origin[i][j];
-			}	
-		}
-		return copy;
-	}
 
 	public TreeSet<String> getWordsInMatrix() {
 		return this.wordsInMatrix;
