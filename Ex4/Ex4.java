@@ -3,10 +3,10 @@ public class Ex4 {
 	public static final boolean LAND = true;
 	public static final boolean WATER = false;
 	
-	public static boolean[][] map = {{WATER,LAND,WATER,LAND},
-									 {LAND,LAND,WATER,WATER},
-									 {WATER,WATER,LAND,WATER},
-									 {WATER,WATER,LAND,WATER}};
+	public static boolean[][] map = {{WATER, LAND, WATER, LAND},
+					 {LAND, LAND, WATER, WATER},
+					 {WATER, WATER, LAND, WATER},
+					 {WATER, WATER, LAND, WATER}};
 	
 	public static void main(String[] args) {
 		System.out.print("Number of islands in the map: ");
