@@ -24,7 +24,7 @@ public class Ex4 {
 		int numberOfIslands = 0;
 		
 		for (int row = 0; row < map.length; row++) {
-			for (int col = 0; col < map.length; col++) {
+			for (int col = 0; col < map[0].length; col++) {
 				if (map[row][col]) {
 					exploreNeighbors(row, col, map);
 					numberOfIslands++;
